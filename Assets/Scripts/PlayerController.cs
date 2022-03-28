@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float PlayerSpeed;
     bool isGrounded = true;
     Rigidbody rb;
-
+    int score;
    
    
     void Start()
@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector3.up * playerJumpForce);
             isGrounded = false;
         }
-       
+        score = (int)transform.position.x;
+        Debug.Log("Score :" + score);
     }
     private void OnCollisionEnter(Collision collision)
     {

@@ -12,9 +12,5 @@ public class PlatformController : MonoBehaviour
         Debug.Log(platformSize);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
